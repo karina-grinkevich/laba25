@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>time</title>
+         </head>
+<script >
+
+  
+    
+  var flag=0;
+var idp=null;
+function myclock()
+{
+if(flag==1)
+{
+d = new Date();
+window.document.c.f.value =
+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+}
+idp=setTimeout("myclock();",500);
+}
+function flagss()
+{
+if(flag==0) flag=1; else flag=0;
+}  
+    
+
+    
+    
+</script> 
+            </head> 
+            <body > 
+          
+  <FORM NAME=c>
+      Дмитрий Витальевич гляньте на время!!! Уже <INPUT NAME=f size=8><INPUT TYPE=button VALUE="START/STOP"  onClick="flagss();myclock();"></INPUT></INPUT> а я мы ещё не завтракали... Отпустите покушать! Пожалуйста!!
+</FORM>              
+                
+         <br>       
+                
+            
+                
+                
+            </body> 
+        </html>
+   
